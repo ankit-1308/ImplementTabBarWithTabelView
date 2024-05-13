@@ -13,6 +13,10 @@
 		33A156272BF1E2DB0043F8D7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 33A156262BF1E2DB0043F8D7 /* Base */; };
 		33A156292BF1E2DE0043F8D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33A156282BF1E2DE0043F8D7 /* Assets.xcassets */; };
 		33A1562C2BF1E2DE0043F8D7 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 33A1562B2BF1E2DE0043F8D7 /* Base */; };
+		33A156342BF1EBFF0043F8D7 /* SonyLivView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A156332BF1EBFF0043F8D7 /* SonyLivView.swift */; };
+		33A156362BF1EC1B0043F8D7 /* Zee5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A156352BF1EC1B0043F8D7 /* Zee5View.swift */; };
+		33A156382BF1EC2D0043F8D7 /* HotstarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A156372BF1EC2D0043F8D7 /* HotstarView.swift */; };
+		33A1563A2BF1EC400043F8D7 /* AmazonPrimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A156392BF1EC400043F8D7 /* AmazonPrimeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		33A156282BF1E2DE0043F8D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33A1562B2BF1E2DE0043F8D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33A1562D2BF1E2DE0043F8D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33A156332BF1EBFF0043F8D7 /* SonyLivView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonyLivView.swift; sourceTree = "<group>"; };
+		33A156352BF1EC1B0043F8D7 /* Zee5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zee5View.swift; sourceTree = "<group>"; };
+		33A156372BF1EC2D0043F8D7 /* HotstarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotstarView.swift; sourceTree = "<group>"; };
+		33A156392BF1EC400043F8D7 /* AmazonPrimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmazonPrimeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				33A156212BF1E2DB0043F8D7 /* SceneDelegate.swift */,
 				33A156232BF1E2DB0043F8D7 /* ViewController.swift */,
 				33A156252BF1E2DB0043F8D7 /* Main.storyboard */,
+				33A156332BF1EBFF0043F8D7 /* SonyLivView.swift */,
+				33A156352BF1EC1B0043F8D7 /* Zee5View.swift */,
+				33A156372BF1EC2D0043F8D7 /* HotstarView.swift */,
+				33A156392BF1EC400043F8D7 /* AmazonPrimeView.swift */,
 				33A156282BF1E2DE0043F8D7 /* Assets.xcassets */,
 				33A1562A2BF1E2DE0043F8D7 /* LaunchScreen.storyboard */,
 				33A1562D2BF1E2DE0043F8D7 /* Info.plist */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A156362BF1EC1B0043F8D7 /* Zee5View.swift in Sources */,
 				33A156242BF1E2DB0043F8D7 /* ViewController.swift in Sources */,
+				33A1563A2BF1EC400043F8D7 /* AmazonPrimeView.swift in Sources */,
+				33A156382BF1EC2D0043F8D7 /* HotstarView.swift in Sources */,
 				33A156202BF1E2DB0043F8D7 /* AppDelegate.swift in Sources */,
 				33A156222BF1E2DB0043F8D7 /* SceneDelegate.swift in Sources */,
+				33A156342BF1EBFF0043F8D7 /* SonyLivView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
