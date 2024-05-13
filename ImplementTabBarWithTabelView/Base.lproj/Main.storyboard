@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1D2-rh-7OP">
-                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="KsI-Td-gaN" rowHeight="80" style="IBUITableViewCellStyleDefault" id="Ses-Dp-WFJ">
@@ -38,6 +38,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="evk-Yl-yOs" id="X9j-C0-egx"/>
+                                    <outlet property="delegate" destination="evk-Yl-yOs" id="Szt-3M-c0p"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xXm-9f-ebi"/>
@@ -49,11 +53,14 @@
                             <constraint firstItem="1D2-rh-7OP" firstAttribute="top" secondItem="xXm-9f-ebi" secondAttribute="top" id="cca-sZ-aqJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Zee5" id="aTh-lX-6XZ"/>
+                    <navigationItem key="navigationItem" title="Zee5" id="haK-Nw-ykx"/>
+                    <connections>
+                        <outlet property="myTabelView" destination="1D2-rh-7OP" id="M9J-14-pkd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BVa-Z9-4ib" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-434" y="-98"/>
+            <point key="canvasLocation" x="492.36641221374043" y="-98.591549295774655"/>
         </scene>
         <!--Amazon Prime-->
         <scene sceneID="279-8y-VK3">
@@ -64,7 +71,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="31y-dM-QQe">
-                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="SJV-Bu-9FS" rowHeight="80" style="IBUITableViewCellStyleDefault" id="nr2-sz-pH7">
@@ -85,6 +92,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="0us-KY-3ZK" id="cKR-l1-UVp"/>
+                                    <outlet property="delegate" destination="0us-KY-3ZK" id="RfL-yg-bm7"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5A6-cc-eUA"/>
@@ -96,11 +107,14 @@
                             <constraint firstItem="5A6-cc-eUA" firstAttribute="trailing" secondItem="31y-dM-QQe" secondAttribute="trailing" id="mOm-mg-jzw"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Amazon Prime" id="UAD-NR-zHk"/>
+                    <navigationItem key="navigationItem" title="Amazon Prime" id="AD0-8s-X0l"/>
+                    <connections>
+                        <outlet property="myTabelView" destination="31y-dM-QQe" id="DVp-Hz-s7v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a0V-DG-Dee" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="848" y="-99"/>
+            <point key="canvasLocation" x="2700" y="-99.295774647887328"/>
         </scene>
         <!--Sony Liv-->
         <scene sceneID="VRh-zY-iFN">
@@ -111,7 +125,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XCl-Vy-Z4N">
-                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="heG-bm-BsZ" rowHeight="80" style="IBUITableViewCellStyleDefault" id="zPS-NS-0mK">
@@ -132,6 +146,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vbt-R5-JiB" id="SJi-ZQ-Okc"/>
+                                    <outlet property="delegate" destination="vbt-R5-JiB" id="Hyn-Zt-DtN"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="43a-L9-EwD"/>
@@ -143,13 +161,16 @@
                             <constraint firstItem="XCl-Vy-Z4N" firstAttribute="top" secondItem="43a-L9-EwD" secondAttribute="top" id="tMc-vW-hby"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Sony Liv" id="fr6-aL-zq3"/>
+                    <navigationItem key="navigationItem" title="Sony Liv" id="eWD-bg-w4K"/>
+                    <connections>
+                        <outlet property="myTabelView" destination="XCl-Vy-Z4N" id="QQo-ya-BJW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGh-TY-BLg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-434" y="-920"/>
+            <point key="canvasLocation" x="492.36641221374043" y="-920.4225352112677"/>
         </scene>
-        <!--HotStar-->
+        <!--Hotstar-->
         <scene sceneID="JGe-A8-yff">
             <objects>
                 <viewController id="1ty-sh-Vri" customClass="HotstarView" customModule="ImplementTabBarWithTabelView" customModuleProvider="target" sceneMemberID="viewController">
@@ -158,7 +179,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="nZQ-sx-aFn">
-                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="sqY-Re-PBo" rowHeight="80" style="IBUITableViewCellStyleDefault" id="78n-YN-dFg">
@@ -179,6 +200,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1ty-sh-Vri" id="6Xk-52-cHo"/>
+                                    <outlet property="delegate" destination="1ty-sh-Vri" id="Cwk-pr-VKQ"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HdK-hD-hGb"/>
@@ -190,11 +215,14 @@
                             <constraint firstItem="HdK-hD-hGb" firstAttribute="trailing" secondItem="nZQ-sx-aFn" secondAttribute="trailing" id="puv-ZK-rwb"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="HotStar" id="bck-dy-1LI"/>
+                    <navigationItem key="navigationItem" title="Hotstar" id="39P-eK-2R3"/>
+                    <connections>
+                        <outlet property="myTabelView" destination="nZQ-sx-aFn" id="LIy-l7-APt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4F9-l1-Zuy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="787" y="-920"/>
+            <point key="canvasLocation" x="2638.9312977099235" y="-920.4225352112677"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wCU-7W-Tz8">
@@ -206,15 +234,91 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vbt-R5-JiB" kind="relationship" relationship="viewControllers" id="cwh-1d-7PK"/>
-                        <segue destination="evk-Yl-yOs" kind="relationship" relationship="viewControllers" id="Xvc-6F-ug0"/>
-                        <segue destination="1ty-sh-Vri" kind="relationship" relationship="viewControllers" id="Gio-Iu-hfy"/>
-                        <segue destination="0us-KY-3ZK" kind="relationship" relationship="viewControllers" id="RNz-og-8gW"/>
+                        <segue destination="BCA-4N-Kd2" kind="relationship" relationship="viewControllers" id="cwh-1d-7PK"/>
+                        <segue destination="wfP-Lr-Qcd" kind="relationship" relationship="viewControllers" id="Xvc-6F-ug0"/>
+                        <segue destination="xfk-bL-qwb" kind="relationship" relationship="viewControllers" id="Gio-Iu-hfy"/>
+                        <segue destination="Cji-OT-Ksn" kind="relationship" relationship="viewControllers" id="RNz-og-8gW"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uRv-xU-Lxv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1373" y="-505"/>
+        </scene>
+        <!--Sony Liv-->
+        <scene sceneID="oFr-AB-n45">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BCA-4N-Kd2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Sony Liv" id="fr6-aL-zq3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oGD-mL-KFe">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vbt-R5-JiB" kind="relationship" relationship="rootViewController" id="jD1-iP-Qa3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aUX-c2-Zs7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-434.35114503816794" y="-920.4225352112677"/>
+        </scene>
+        <!--HotStar-->
+        <scene sceneID="Gnf-C0-ldU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xfk-bL-qwb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="HotStar" id="bck-dy-1LI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dds-h8-oKs">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1ty-sh-Vri" kind="relationship" relationship="rootViewController" id="IxK-bn-hXj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vkU-A3-zCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1712.2137404580153" y="-920.4225352112677"/>
+        </scene>
+        <!--Zee5-->
+        <scene sceneID="rC0-si-bVq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wfP-Lr-Qcd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Zee5" id="aTh-lX-6XZ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XaG-3w-4X6">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="evk-Yl-yOs" kind="relationship" relationship="rootViewController" id="CbG-EH-Wn0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b91-JL-uEd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-434.35114503816794" y="-98.591549295774655"/>
+        </scene>
+        <!--Amazon Prime-->
+        <scene sceneID="mqT-wd-1oh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Cji-OT-Ksn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Amazon Prime" id="UAD-NR-zHk"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7cm-B7-Gpv">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0us-KY-3ZK" kind="relationship" relationship="rootViewController" id="aTs-Dw-K6v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n7U-P8-7fu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1773.2824427480916" y="-99.295774647887328"/>
         </scene>
     </scenes>
     <resources>
